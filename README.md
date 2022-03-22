@@ -1,5 +1,4 @@
-[tinygraphs](http://tinygraphs.com)
-==============
+# [tinygraphs](http://tinygraphs.com)
 
 **tinygraphs** is an avatar generator web service. Checkout [tinygraphs.com](http://www.tinygraphs.com/) to try it.
 
@@ -7,25 +6,26 @@
 
 #### Contributors
 
-* [Santiago](https://github.com/santiaago)
-* [Remy](https://github.com/rjourde)
-* [Carmen](https://plus.google.com/+CarmenRebolledo)
+- [Santiago](https://github.com/santiaago)
+- [Remy](https://github.com/rjourde)
+- [Carmen](https://plus.google.com/+CarmenRebolledo)
 
 #### Blog post:
 
 <a href="http://www.sanarias.com/blog/415BuildingtinygraphsanavatarwebserviceinGo" target="_blank">Building tinygraphs an avatar web service in Go</a>
 
-How to use:
-======
+# How to use:
 
-* You can set the HTML source of the image to point directly to [tinygraphs.com](http://tinygraphs.com)
-~~~html
-<img src="http://tinygraphs.com/squares/helloworld">
-~~~
-* You can save the image and use it directly on your site
-* You can `go get` this repo and use it.
+- You can set the HTML source of the image to point directly to [tinygraphs.com](http://tinygraphs.com)
 
-*just remember to give us credit with a link to tinygraphs.com ;)*
+```html
+<img src="http://tinygraphs.com/squares/helloworld" />
+```
+
+- You can save the image and use it directly on your site
+- You can `go get` this repo and use it.
+
+_just remember to give us credit with a link to tinygraphs.com ;)_
 
 ## Supported routes:
 
@@ -111,121 +111,121 @@ How to use:
 
 ## Parameters:
 
-* **size**: `tinygraphs.com/squares/hello?size=60`
-* **formats**: `tinygraphs.com/squares/hello?fmt=svg`
+- **size**: `tinygraphs.com/squares/hello?size=60`
+- **formats**: `tinygraphs.com/squares/hello?fmt=svg`
 
-    The default format is `SVG`.
+  The default format is `SVG`.
 
-    All routes support SVG format, except `Square` routes who also support JPEG.
+  All routes support SVG format, except `Square` routes who also support JPEG.
 
-* **background and foreground**: `tinygraphs.com/squares/hello?bg=ff4008&fg=04d6f2`
+- **background and foreground**: `tinygraphs.com/squares/hello?bg=ff4008&fg=04d6f2`
 
-    You can specify the color of the background or foreground by using parameters `bg` and `fg` and passing an hexadecimal value of the color:
+  You can specify the color of the background or foreground by using parameters `bg` and `fg` and passing an hexadecimal value of the color:
 
-* **theme**: `tinygraphs.com/labs/squares/random?theme=frogideas`
+- **theme**: `tinygraphs.com/labs/squares/random?theme=frogideas`
 
-    You can specify the theme you want to take into account in the image.
+  You can specify the theme you want to take into account in the image.
 
-    ![theme](http://tinygraphs.com/labs/squares/random?theme=frogideas&size=120&fmt=svg)
+  ![theme](http://tinygraphs.com/labs/squares/random?theme=frogideas&size=120&fmt=svg)
 
-    Here is the list of existing themes:
-    * ![theme](http://tinygraphs.com/themes/base?fmt=svg&h=20) base
-    * ![theme](http://tinygraphs.com/themes/sugarsweets?fmt=svg&h=20) sugarsweets
-    * ![theme](http://tinygraphs.com/themes/heatwave?fmt=svg&h=20) heatwave
-    * ![theme](http://tinygraphs.com/themes/daisygarden?fmt=svg&h=20)daisygarden
-    * ![theme](http://tinygraphs.com/themes/seascape?fmt=svg&h=20) seascape
-    * ![theme](http://tinygraphs.com/themes/summerwarmth?fmt=svg&h=20) summerwarmth
-    * ![theme](http://tinygraphs.com/themes/bythepool?fmt=svg&h=20) bythepool
-    * ![theme](http://tinygraphs.com/themes/duskfalling?fmt=svg&h=20) duskfalling
-    * ![theme](http://tinygraphs.com/themes/frogideas?fmt=svg&h=20) frogideas
-    * ![theme](http://tinygraphs.com/themes/berrypie?fmt=svg&h=20) berrypie
+  Here is the list of existing themes:
 
+  - ![theme](http://tinygraphs.com/themes/base?fmt=svg&h=20) base
+  - ![theme](http://tinygraphs.com/themes/sugarsweets?fmt=svg&h=20) sugarsweets
+  - ![theme](http://tinygraphs.com/themes/heatwave?fmt=svg&h=20) heatwave
+  - ![theme](http://tinygraphs.com/themes/daisygarden?fmt=svg&h=20)daisygarden
+  - ![theme](http://tinygraphs.com/themes/seascape?fmt=svg&h=20) seascape
+  - ![theme](http://tinygraphs.com/themes/summerwarmth?fmt=svg&h=20) summerwarmth
+  - ![theme](http://tinygraphs.com/themes/bythepool?fmt=svg&h=20) bythepool
+  - ![theme](http://tinygraphs.com/themes/duskfalling?fmt=svg&h=20) duskfalling
+  - ![theme](http://tinygraphs.com/themes/frogideas?fmt=svg&h=20) frogideas
+  - ![theme](http://tinygraphs.com/themes/berrypie?fmt=svg&h=20) berrypie
 
-* **numcolors**: `tinygraphs.com/labs/squares/random?theme=summerwarmth&numcolors=4`
+- **numcolors**: `tinygraphs.com/labs/squares/random?theme=summerwarmth&numcolors=4`
 
-    You can specify the number of colors that you want to render the image.
-    Default value is **2** and can be extended to **4**.
+  You can specify the number of colors that you want to render the image.
+  Default value is **2** and can be extended to **4**.
 
-    ![theme](http://tinygraphs.com/labs/squares/random?theme=frogideas&size=120&fmt=svg&numcolors=2) ![theme](http://tinygraphs.com/labs/squares/random?theme=frogideas&size=120&fmt=svg&numcolors=3) ![theme](http://tinygraphs.com/labs/squares/random?theme=frogideas&size=120&fmt=svg&numcolors=4)
+  ![theme](http://tinygraphs.com/labs/squares/random?theme=frogideas&size=120&fmt=svg&numcolors=2) ![theme](http://tinygraphs.com/labs/squares/random?theme=frogideas&size=120&fmt=svg&numcolors=3) ![theme](http://tinygraphs.com/labs/squares/random?theme=frogideas&size=120&fmt=svg&numcolors=4)
 
-* **inv**:
-`tinygraphs.com/squares/hello?theme=frogideas&numcolors=2&inv=1`
+- **inv**:
+  `tinygraphs.com/squares/hello?theme=frogideas&numcolors=2&inv=1`
 
-    You can specify if you want to see the colors inverted.
-    Default value is **false**. `inv` parameter works with theme colors or default (black and white) colors. The number of colors has to be equal to **2**.
+      You can specify if you want to see the colors inverted.
+      Default value is **false**. `inv` parameter works with theme colors or default (black and white) colors. The number of colors has to be equal to **2**.
 
-    ![normal](http://tinygraphs.com/squares/hello?theme=frogideas&size=120&fmt=svg&numcolors=2&inv=0) ![inverse](http://tinygraphs.com/squares/hello?theme=frogideas&size=120&fmt=svg&numcolors=2&inv=1)
+      ![normal](http://tinygraphs.com/squares/hello?theme=frogideas&size=120&fmt=svg&numcolors=2&inv=0) ![inverse](http://tinygraphs.com/squares/hello?theme=frogideas&size=120&fmt=svg&numcolors=2&inv=1)
 
-* **order**:
-`tinygraphs.com/squares/hello?theme=frogideas&numcolors=4&order=3&order=2&order=1&order=0`
+- **order**:
+  `tinygraphs.com/squares/hello?theme=frogideas&numcolors=4&order=3&order=2&order=1&order=0`
 
-    You can specify the order in which you want to see the colors by using the `order` parameter. Just add the indexes in which you wish to see the colors to the order array (indexes are zero based)
-    Like so: `order=3&order=2&order=1&order=0`
+      You can specify the order in which you want to see the colors by using the `order` parameter. Just add the indexes in which you wish to see the colors to the order array (indexes are zero based)
+      Like so: `order=3&order=2&order=1&order=0`
 
-    ![normal](http://tinygraphs.com/squares/hello?theme=seascape&size=120&fmt=svg&numcolors=4)
-    ![reorder](http://tinygraphs.com/squares/hello?theme=seascape&size=120&fmt=svg&numcolors=4&order=3&order=2&order=1&order=0)
+      ![normal](http://tinygraphs.com/squares/hello?theme=seascape&size=120&fmt=svg&numcolors=4)
+      ![reorder](http://tinygraphs.com/squares/hello?theme=seascape&size=120&fmt=svg&numcolors=4&order=3&order=2&order=1&order=0)
 
-* **lines**:
-`tinygraphs.com/isogrids/hello?lines=4`
+- **lines**:
+  `tinygraphs.com/isogrids/hello?lines=4`
 
- You can specify the number of lines that an isogrid can have using the `lines`parameter. **Default** parameter is **6**. Value has to be greater or equal to 4.
+You can specify the number of lines that an isogrid can have using the `lines`parameter. **Default** parameter is **6**. Value has to be greater or equal to 4.
 
- ![number of lines in isogrid image.](http://tinygraphs.com/isogrids/hello?lines=4&size=120&fmt=svg)
+![number of lines in isogrid image.](http://tinygraphs.com/isogrids/hello?lines=4&size=120&fmt=svg)
 
-* **colors**:
+- **colors**:
 
- `tinygraphs.com/isogrids/hello?lines=4&colors=43e0e8&colors=e84b43`
- You can specify use you own colors by using the `colors` parameter and passing hexa colors.
+`tinygraphs.com/isogrids/hello?lines=4&colors=43e0e8&colors=e84b43`
+You can specify use you own colors by using the `colors` parameter and passing hexa colors.
 
     ![isogrid with custom colors](http://tinygraphs.com/isogrids/hello?lines=4&size=120&colors=43e0e8&colors=e84b43)
 
-* **banner parameters:**
-    * `h`: height parameter.
-    * `w`: width parameter.
-    * `xt`: number of triangles in `isogrid` banner in x axis.
-    * `xs`: number of squares in `squares` banner in x axis.
-    * `theme`: tinygraphs theme to use in banner.
-    * `numcolors`: number of colors to take into account when rendering banner.
+- **banner parameters:**
 
-   `tinygraphs.com/isogrids/banner/random/gradient?theme=bythepool&numcolors=4`
+  - `h`: height parameter.
+  - `w`: width parameter.
+  - `xt`: number of triangles in `isogrid` banner in x axis.
+  - `xs`: number of squares in `squares` banner in x axis.
+  - `theme`: tinygraphs theme to use in banner.
+  - `numcolors`: number of colors to take into account when rendering banner.
 
- ![isogrid gradient banner.](http://tinygraphs.com/isogrids/banner/random/gradient?h=75&xt=80&theme=bythepool&numcolors=4)
+  `tinygraphs.com/isogrids/banner/random/gradient?theme=bythepool&numcolors=4`
 
-* **random banner parameters:**
-    * `p`: probability of the main color in the banner. Default value is `0.5`. Values should be between `0` and `1`
+![isogrid gradient banner.](http://tinygraphs.com/isogrids/banner/random/gradient?h=75&xt=80&theme=bythepool&numcolors=4)
 
-    `tinygraphs.com/labs/isogrids/banner/gradient?theme=bythepool&p=0.1`
+- **random banner parameters:**
 
-    ![isogrid gradient banner.](http://tinygraphs.com/labs/isogrids/banner/gradient?h=75&xt=80&theme=bythepool&numcolors=2&p=0.1)
+  - `p`: probability of the main color in the banner. Default value is `0.5`. Values should be between `0` and `1`
 
-* **isogrid color gradient parameters**
+  `tinygraphs.com/labs/isogrids/banner/gradient?theme=bythepool&p=0.1`
 
-    You can manipulate the gradient vector using the following parameter.
-    * `gx1`: first gradient coordinate along x axis.
-    * `gy1`: first gradient coordinate along y axis.
-    * `gx2`: second gradient coordinate along x axis.
-    * `gy2`: second gradient coordinate along y axis.
+  ![isogrid gradient banner.](http://tinygraphs.com/labs/isogrids/banner/gradient?h=75&xt=80&theme=bythepool&numcolors=2&p=0.1)
 
-    `tinygraphs.com/labs/isogrids/banner/gradient?theme=bythepool&xt=4&h=120&w=120&gx1=0&gy1=0&gy2=60&gx2=60`
+- **isogrid color gradient parameters**
 
-    ![isogrid color gradient](http://www.tinygraphs.com/labs/isogrids/banner/gradient?theme=bythepool&xt=4&h=120&w=120&gx1=0&gy1=0&gy2=60&gx2=60)
+  You can manipulate the gradient vector using the following parameter.
 
-Stack
-======
+  - `gx1`: first gradient coordinate along x axis.
+  - `gy1`: first gradient coordinate along y axis.
+  - `gx2`: second gradient coordinate along x axis.
+  - `gy2`: second gradient coordinate along y axis.
 
-* Go
-* Heroku
+  `tinygraphs.com/labs/isogrids/banner/gradient?theme=bythepool&xt=4&h=120&w=120&gx1=0&gy1=0&gy2=60&gx2=60`
 
-Third parties
-=====
+  ![isogrid color gradient](http://www.tinygraphs.com/labs/isogrids/banner/gradient?theme=bythepool&xt=4&h=120&w=120&gx1=0&gy1=0&gy2=60&gx2=60)
 
-* [Bootstrap](http://getbootstrap.com/)
-* [AngularJS](http://angularjs.org/)
-* [route](http://github.com/taironas/route/)
-* [svgo](https://github.com/ajstarks/svgo)
+# Stack
 
-Installation
-======
+- Go
+- Heroku
+
+# Third parties
+
+- [Bootstrap](http://getbootstrap.com/)
+- [AngularJS](http://angularjs.org/)
+- [route](http://github.com/taironas/route/)
+- [svgo](https://github.com/ajstarks/svgo)
+
+# Installation
 
     go get github.com/taironas/tinygraphs
     cd $GOPATH/src/github.com/taironas/tinygraphs
@@ -233,21 +233,19 @@ Installation
     go build
     export PORT=8080
 
-Run App
-=======
+# Run App
 
     > pwd
     $GOPATH/src/github.com/taironas/tinygraphs
     > tinygraphs
     2014/11/19 22:23:57 Listening on 8080
 
-Build
-======
+# Build
+
     >cd $GOPATH/src/github.com/tinygraphs
     >go build
 
-Test locally
-=============
+# Test locally
 
 **option 1:**
 
@@ -266,8 +264,7 @@ If you have heroku install you should be able to run
 
     > go test ./...
 
-Deploy
-=======
+# Deploy
 
 Easy
 
